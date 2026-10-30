@@ -290,6 +290,7 @@
   .cta .arrow { width: 90px; margin: 0 auto 40px; rotate: 90deg; }
   .cta h2 { font-size: clamp(34px, 5.4vw, 72px); max-width: 15ch; margin: 0 auto 18px; }
   .cta p { margin-bottom: 30px; font-size: clamp(17px, 1.6vw, 19px); }
+  .cta p:has(+ p) { margin-bottom: 18px; }
 
   footer {
     background: var(--navy); color: var(--creme);
@@ -499,7 +500,8 @@
     <div class="wrap">
       <img class="arrow reveal" src="assets/seta.png" alt="" aria-hidden="true">
       <h2 class="title reveal d1" data-i18n="final.title">Você não precisa ter tudo compreendido antes de começar.</h2>
-      <p class="reveal d2" data-i18n="final.text">Às vezes, basta sentir que algo precisa de atenção.<br>Você pode entrar em contato quando sentir que é o momento.</p>
+      <p class="reveal d2" data-i18n="final.text">Às vezes, basta sentir que algo precisa de atenção.</p>
+      <p class="reveal d2" data-i18n="final.text2">Você pode entrar em contato quando sentir que é o momento.</p>
       <a class="btn btn--navy reveal d3" id="contact-link" href="#" data-i18n="cta.button">Entrar em contato</a>
     </div>
   </section>
@@ -582,7 +584,8 @@
     "offer.text": "Psychoanalysis invites you to speak freely, without needing to organize your thoughts or find ready-made answers. In the process of speaking, even what feels disconnected, forgotten, or difficult to put into words can find its place.",
     "offer.text2": "Gradually, we can begin to recognize recurring patterns, understand conflicts that shape our relationships, and explore how our personal history influences the way we feel and live. It’s not a way of finding definitive answers, but making room for new ways of understanding ourselves.",
     "final.title": "You don’t need to have everything figured out before you begin.",
-    "final.text": "Sometimes, it’s enough to feel that something needs attention.<br>You’re welcome to get in touch whenever you feel ready.",
+    "final.text": "Sometimes, it’s enough to feel that something needs attention.",
+    "final.text2": "You’re welcome to get in touch whenever you feel ready.",
     "foot.tagline": "A space to listen to what lies beneath what we feel.",
     "foot.aria": "Footer",
     "foot.nav": "Navigate",
