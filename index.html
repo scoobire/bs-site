@@ -261,6 +261,16 @@
   .split h2 { font-size: clamp(32px, 4.4vw, 56px); margin-bottom: 24px; }
   .split p { font-size: clamp(17px, 1.6vw, 19px); }
   .split p + p { margin-top: 16px; }
+  .sens { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 22px; }
+  .sens li {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--creme-claro);
+    border-radius: 18px;
+    padding: 10px 14px;
+    font-weight: 600; font-size: 16px; line-height: 1.25;
+  }
+  .sens img { flex: none; width: 38px; height: 38px; object-fit: contain; transition: transform .55s cubic-bezier(.34, 1.9, .5, 1); }
+  .sens li:hover img { transform: scale(1.2) rotate(-8deg); }
 
   /* ---------- offer ---------- */
   .offer { padding: 0 0 40px; }
@@ -347,6 +357,7 @@
   }
   @media (max-width: 520px) {
     .foot-grid { grid-template-columns: 1fr; gap: 32px; padding-top: 24px; }
+    .sens { grid-template-columns: 1fr; }
     body { font-size: 17px; }
     header .logo img { height: 36px; }
     header .btn { padding: 9px 16px 7px; font-size: 12px; }
@@ -465,7 +476,13 @@
       <div class="pic reveal"><img src="assets/bia2.jpeg" alt="Mãos de Beatriz sobre um livro de psicanálise aberto" data-i18n-alt="split.alt"></div>
       <div>
         <h2 class="title reveal" data-i18n="split.title">Corpo e emoção</h2>
-        <p class="reveal d1" data-i18n="split.p1">Acredito que nossas experiências emocionais e físicas estão profundamente conectadas. Além do que pensamos e sentimos, podemos também olhar para o que acontece no corpo: uma respiração curta, dores de cabeça recorrentes, tensões ou limitações de movimento.</p>
+        <p class="reveal d1" data-i18n="split.p1">Acredito que nossas experiências emocionais e físicas estão profundamente conectadas. Além do que pensamos e sentimos, podemos também olhar para o que acontece no corpo:</p>
+        <ul class="sens">
+          <li class="reveal d1"><img src="assets/sens-respiracao.png" alt="" aria-hidden="true"><span data-i18n="split.s1">Respiração curta</span></li>
+          <li class="reveal d2"><img src="assets/sens-cabeca.png" alt="" aria-hidden="true"><span data-i18n="split.s2">Dores de cabeça recorrentes</span></li>
+          <li class="reveal d3"><img src="assets/sens-tensao.png" alt="" aria-hidden="true"><span data-i18n="split.s3">Tensões</span></li>
+          <li class="reveal d4"><img src="assets/sens-movimento.png" alt="" aria-hidden="true"><span data-i18n="split.s4">Limitações de movimento</span></li>
+        </ul>
         <p class="reveal d2" data-i18n="split.p2">Essas experiências podem fazer parte de uma história maior, e explorá-las em conjunto pode nos ajudar a compreender como chegamos até aqui.</p>
       </div>
     </div>
@@ -562,7 +579,11 @@
     "about.p2": "My work offers a space to slow down, explore what you’re feeling, and make sense of experiences that may be difficult to put into words.",
     "split.alt": "Beatriz’s hands on an open psychoanalysis book",
     "split.title": "Body and emotion",
-    "split.p1": "I believe our emotional and physical experiences are deeply connected. Alongside what we think and feel, we can also pay attention to what happens in the body: a shortened breath, recurring headaches, tension, or limitations in movement.",
+    "split.p1": "I believe our emotional and physical experiences are deeply connected. Alongside what we think and feel, we can also pay attention to what happens in the body:",
+    "split.s1": "A shortened breath",
+    "split.s2": "Recurring headaches",
+    "split.s3": "Tension",
+    "split.s4": "Limitations in movement",
     "split.p2": "These experiences can be part of a larger story, and exploring them together can help us understand how we’ve arrived where we are today.",
     "offer.title": "A space that is yours.",
     "offer.li1": "Individual and private sessions",
